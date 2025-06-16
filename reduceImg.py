@@ -5,7 +5,7 @@ import random
 
 # 입력 폴더 경로
 input_folder = r"C:\Users\나이현\Desktop\한국 음식 이미지\kfood"
-max_images_per_class = 12
+max_images_per_class = 12 #1000장의 이미지를 12장으로 줄임
 
 for filename in os.listdir(input_folder):
     if filename.endswith(".zip"):
