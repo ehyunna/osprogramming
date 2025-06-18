@@ -1,0 +1,13 @@
+!git clone https://github.com/ultralytics/yolov5
+%cd yolov5
+!pip install ultralytics
+
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="0si8fSHWSgCajdynx6xe")
+project = rf.workspace("oss-jbq3v").project("oss-ctqnn")
+version = project.version(1)
+dataset = version.download("yolov5")
+
+!python train.py --img 640 --batch 16 --epochs 50 --data OSS-1/data.yaml --weights yolov5s.pt
