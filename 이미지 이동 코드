@@ -1,0 +1,25 @@
+import os, random, shutil
+
+# 원본 이미지/라벨 폴더
+base = "/content/yolov5/food_1-4/train"
+img_dir = os.path.join(base, "images")
+lbl_dir = os.path.join(base, "labels")
+
+# 새 validation 경로 생성
+val_img_dir = "/content/yolov5/food_1-4/valid/images"
+val_lbl_dir = "/content/yolov5/food_1-4/valid/labels"
+os.makedirs(val_img_dir, exist_ok=True)
+os.makedirs(val_lbl_dir, exist_ok=True)
+
+# 10% validation으로 이동
+images = os.listdir(img_dir)
+random.shuffle(images)
+val_count = int(len(images) * 0.1)
+val_images = images[:val_count]
+
+for img in val_images:
+    lbl = img.replace('.jpg', '.txt').replace('.png', '.txt')
+    shutil.move(os.path.join(img_dir, img), os.path.join(val_img_dir, img))
+    shutil.move(os.path.join(lbl_dir, lbl), os.path.join(val_lbl_dir, lbl))
+
+print(f" {val_count}개의 validation 이미지가 이동되었습니다.")
