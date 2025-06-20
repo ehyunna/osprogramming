@@ -1,0 +1,7 @@
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="0si8fSHWSgCajdynx6xe")
+project = rf.workspace("oss-jbq3v").project("food_3-7pcyj")
+version = project.version(3)
+dataset = version.download("yolov5")
