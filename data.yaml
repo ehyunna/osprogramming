@@ -1,13 +1,25 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+yaml_content = """
+train: ./images/train
+val: ./images/val
+test: ./images/test
 
-nc: 80
-names: ['aehobakbokkeum', 'albap', 'anchovy', 'bachu_kimchi', 'bean', 'bibim_naengmyeon', 'bibimbap', 'bossam', 'buchu_kimchi', 'bugeoguk', 'bulgogi', 'chonggak_kimchi', 'cucumber', 'dakgalbi', 'deodeokgui', 'dorajimuchim', 'dotorimuk', 'dry_shrimp', 'eggplant', 'eggsoup', 'fishcake', 'galbi', 'gat_kimchi', 'gopchang', 'gosari', 'gyeongdan', 'hairtail', 'hongeomuchim', 'hwangtaegui', 'jabgok_rice', 'jajangmyeon', 'janchiguksu', 'jangeogui', 'japchae', 'jjamppong', 'jjolmyeon', 'jogaegui', 'jukkumibokkeum', 'kalguksu', 'kimbap', 'kimchifr', 'kkakdugi', 'knmsoup', 'kongguksu', 'kongnamulmuchim', 'macerel', 'makguksu', 'mandu', 'miyeokguk', 'miyeokjulgibokkeum', 'muguk', 'mulnaengmyeon', 'musaengchae', 'nabak_kimchi', 'ojingeochae', 'pakimchi', 'pizza', 'potatosalad', 'rabokki', 'ramyeon', 'riceball', 'samgeopsal', 'sausage', 'shrimp_rice', 'sigeumchinamul', 'sikhye', 'siregi', 'smoked_duck', 'spicypork', 'sujebi', 'sukjunamul', 'tofu_kimchi', 'tteokbokki', 'tteokgalbi', 'tteokguk', 'white_kimchi', 'yeolmu_goksu', 'yeolmu_kimchi', 'yubuchobap', 'yukgaejang']
+nc: 14
+names:
+  - anchovy
+  - bulgogi
+  - dotorimuk
+  - galbi
+  - gosari
+  - jangeogui
+  - japchae
+  - jogaegui
+  - kongnamulmuchim
+  - macerel
+  - potatosalad
+  - sausage
+  - sigeumchinamul
+  - tofu_kimchi
+  """
 
-roboflow:
-  workspace: oss-jbq3v
-  project: oss-ctqnn
-  version: 1
-  license: CC BY 4.0
-  url: https://universe.roboflow.com/oss-jbq3v/oss-ctqnn/dataset/1
+with open("data.yaml", "w", encoding="utf-8") as f:
+    f.write(yaml_content)
