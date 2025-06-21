@@ -29,6 +29,17 @@
 <p align="center">
   <img width="500" alt="수면 추천 결과 화면" src="https://github.com/user-attachments/assets/92d0866c-7fa7-4701-aff9-02f175ea3b5f" />
   <br/>
+  
   <em>그림 3. pandas 기반 데이터 분석 로직</em>
 </p>
 
+Pandas 라이브러리를 활용하여 사전에 구축된 엑셀 파일을 불러와 표 형식의 데이터를 로딩
+ · 엑셀 내부에는 항목 이름(예: 김밥, 비빔밥 등)과 관련 수치 정보가 테이블 형태로 저장되어있으며, 이를 자동 인식 및 매핑할 수 있도록 설계
+
+# 사용 방법 
+ app.py 실행 이후 termianl에서
+ 
+ streamlit run app.py
+ 
+이후 이미지 업로드
+ 
