@@ -37,9 +37,9 @@ Pandas 라이브러리를 활용하여 사전에 구축된 엑셀 파일을 불�
  · 엑셀 내부에는 항목 이름(예: 김밥, 비빔밥 등)과 관련 수치 정보가 테이블 형태로 저장되어있으며, 이를 자동 인식 및 매핑할 수 있도록 설계
 
 # 사용 방법 
- app.py 실행 이후 termianl에서
- cd "프로젝트 디렉토리"
- streamlit run app.py
- 
+app.py 실행 이후 terminal에서  
+cd "프로젝트 디렉토리"  
+streamlit run app.py  
+
 이후 이미지 업로드
  
