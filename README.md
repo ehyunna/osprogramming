@@ -1,15 +1,35 @@
-# osprogramming
+
+# 🍽️ Food-Image-Recognition
+
+## Table of Contents
+- [Food-Image-Recognition](#food-image-recognition)
+  - [Table of Contents](#Table-of-Contents)
+  - [About the Project](#about-the-project)
+    - [Overview](#overview)
+    - [Built With](#built-with)
+    - [Dataset](#dataset)
+  - [Results](#results)
+    - [Demo](#Demo)
+    - [Accuracy](#accuracy)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [References](#references)
+
+---
+## About the Project
+
+### Overview
 ##### https://drive.google.com/drive/folders/1yfcrwoKhkjcEOZf3BrRMjT95fE4ASslZ?hl=ko
-##### best.pt파일의 용량이 커서 업로드되지 않아 드라이브 링크 첨부합니다. -나이현
-## cv기반 음식 영양 정보 분석 서비스
+##### best.pt 파일의 용량이 커서 업로드되지 않아 드라이브 링크를 첨부합니다. - 나이현
 
-###### Streamlit과 YOLOv5를 기반으로 사용자가 업로드한 음식 이미지를 자동 인식하고,  탐지된 음식에 대해 사전 구축된 데이터셋을 활용해 영양 성분 및 당뇨 위험도를 분석하는 웹 서비스
+### CV 기반 음식 영양 정보 분석 서비스
 
+###### Streamlit과 YOLOv5를 기반으로 사용자가 업로드한 음식 이미지를 자동 인식하고, 탐지된 음식에 대해 사전 구축된 데이터셋을 활용해 영양 성분 및 당뇨 위험도를 분석하는 웹 서비스
 
 ### 기술 개발 배경
 - 고령화의 가속으로 인해 만성질환자, 특히 당뇨 환자의 수가 지속적으로 증가하고 있음.
 - 질병관리청의 ‘2024 만성질환 현황과 이슈’에 따르면 우리나라 질병 부담에 가장 큰 영향을 미치는 위험 요인은 ‘영양’으로, 건강하지 못한 식습관은 당뇨, 암, 심혈관 질환 등 주요 만성질환의 주요 원인이 되고 있음.
-- 이를 해결 또는 해소하기 위하여 만성질환 환자, 특히 당뇨 환자의 건강한 식생활 유도를 위한 정밀한 음식 영양 분석 기술이 중요한 대안으로 작용할 수 있음.
+- 이를 해결 또는 해소하기 위해 만성질환 환자, 특히 당뇨 환자의 건강한 식생활 유도를 위한 정밀한 음식 영양 분석 기술이 중요한 대안으로 작용할 수 있음.
 
 ### 기술 개발 목표
 - 만성질환을 가진 사람들의 식습관 개선을 위한 개인 맞춤형 음식 영양 분석 기술 개발을 목표로 함.
@@ -24,7 +44,6 @@
 - 탐지된 음식의 영양 성분 조회
 - 탄수화물, 당류, 지방, 콜레스테롤, 나트륨 기준 초과 여부 판단 및 경고 표시
 
-
 ### 프로젝트 개발 내용
 - 연구 개발 내용
 <p align="center"> <img width="311" alt="image" src="https://github.com/user-attachments/assets/fa8a219f-db84-4f72-ace7-89376dd27660" /> <br/> <em>그림 1. 음식 이미지 분류를 위한 딥러닝 모델 구성도</em> </p>
@@ -35,12 +54,11 @@
 
 <p align="center"> <img width="500" alt="사용자 입력 패널" src="https://github.com/user-attachments/assets/7703fe18-6f8c-478f-a4d1-524840857094" /> <br/> <em>그림 2. 객체 탐지 모델의 구조</em> </p>
 
-- 현재 음식 인식 분야에서는 그림 2와 같이 객체 탐지 구조를 사용하고 있음. 본 프로젝트에서도 객체 탐지 모델인 YOLOv5를 사용하여 이를 통해 음식을 인식하고자 함.
--총 3개의 음식 분류 모델 ('food_1_best.pt', 'food_2_best.pt', 'food_3_best.pt')을 구성
--각각 약 13~14개의 음식 클래스를 Roboflow 기반 dataset에서 labelling 및 agumentation진행
--클래스 목록은 각각 'classes_food1.txt', 'classes_food2.txt', 'classes_food3.txt'에 저장됨
+- 총 3개의 음식 분류 모델 ('food_1_best.pt', 'food_2_best.pt', 'food_3_best.pt')을 구성
+- 각각 약 13~14개의 음식 클래스를 Roboflow 기반 dataset에서 labeling 및 augmentation 진행
+- 클래스 목록은 각각 'classes_food1.txt', 'classes_food2.txt', 'classes_food3.txt'에 저장됨
 
-#### 2. Nutrition Analysis Module 
+#### 2. Nutrition Analysis Module
 - 탐지된 음식명을 기반으로 영양 정보를 자동 조회·분석하는 모듈 개발 및 구현
 <p align="center">
   <img width="500" alt="수면 추천 결과 화면" src="https://github.com/user-attachments/assets/92d0866c-7fa7-4701-aff9-02f175ea3b5f" />
@@ -51,29 +69,22 @@
 
 Pandas 라이브러리를 활용하여 사전에 구축된 엑셀 파일을 불러와 표 형식의 데이터를 로딩
  · 엑셀 내부에는 항목 이름(예: 김밥, 비빔밥 등)과 관련 수치 정보가 테이블 형태로 저장되어있으며, 이를 자동 인식 및 매핑할 수 있도록 설계
-
- #### 사용 기술 스택 
-<pre>- Python 3.8+
-- YOLOv5 
-- Streamlit
-- Pandas 
-- OpenCV, Pillow 
-</pre>
-
- #### 프로젝트 구조
-<pre> project-root/  
-├── app.py                        
-├── yolov5/                         
-├── food_1_best.pt                
-├── food_2_best.pt  
-├── food_3_best.pt  
-├── classes_food1.txt              
-├── classes_food2.txt  
-├── classes_food3.txt  
+ 
+#### 프로젝트 구조
+<pre> project-root/
+├── app.py
+├── yolov5/
+├── food_1_best.pt
+├── food_2_best.pt
+├── food_3_best.pt
+├── classes_food1.txt
+├── classes_food2.txt
+├── classes_food3.txt
 ├── input.jpg
-├── 음식별 영양 성분 정보.csv      
-└── runs/                          
+├── 음식별 영양 성분 정보.csv
+└── runs/
 </pre>
+
 #### 필수 패키지 설치
 #### YOLOv5 및 필수 환경 설치
 
@@ -85,21 +96,30 @@ pip install -r requirements.txt
 pip install streamlit Pillow pandas torch>=1.7 opencv-python matplotlib pyyaml
 ```
 
+### Built-with
+```
+- Python 3.8+
+- YOLOv5
+- Streamlit
+- Pandas
+- OpenCV, Pillow
+```
 
+### Dataset
+- 한식 이미지 데이터셋 ([AI Hub 제공](https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=79))을 기반으로 구성됨
+- 총 150종의 한식 음식 클래스가 포함되어 있으며, 각 클래스당 1000장의 이미지 제공
+- Roboflow를 통해 학습에 적합하도록 라벨링 및 증강 처리 후 YOLOv5 학습용 데이터셋으로 변환됨
 
-#### 사용 방법 
-app.py 실행 이후 visual studio code terminal에서  
-```bash 
+### 사용 방법
+```bash
 cd "프로젝트_디렉토리"
 streamlit run app.py
 ```
+---
 
-이후 이미지 업로드
-
-
-
+## Results
  
-#### 사용 예시
+### Demo
 
 사용자가 음식 사진을 업로드하면, 아래와 같은 결과가 출력됨.
 이미지는 YOLOv5 탐지 결과와 Streamlit 분석 결과로 구성됨.
@@ -198,13 +218,34 @@ streamlit run app.py
 
 ---
 
-####  License
+### Accuracy
+<p align="center">
+  <img width="500" alt="food_1 result 그래프" src="https://github.com/user-attachments/assets/b712a61b-d631-44ff-b2fc-05ca5abd1657" />
+  <br/>
+  <em>그림 8-1. 'food_1' 학습 정확도 시각화</em>
+</p>
+
+<p align="center">
+  <img width="500" alt="food_2 result 그래프" src="https://github.com/user-attachments/assets/45abf119-c155-41eb-8121-2e237f50d6b0" />
+  <br/>
+  <em>그림 8-2. 'food_2' 학습 정확도 시각화</em>
+</p>
+
+<p align="center">
+  <img width="500" alt="food_3 result 그래프" src="https://github.com/user-attachments/assets/bab1dd9b-962f-49f6-a3fe-0ab6c4d24d43" />
+  <br/>
+  <em>그림 8-3. 'food_3' 학습 정확도 시각화</em>
+</p>
+---
+
+###  License
 
 - All original code in this repository is licensed under the MIT License.
 - This project also includes code from [YOLOv5](https://github.com/ultralytics/yolov5), which is licensed under the GNU General Public License v3.0 (GPL-3.0).
 
-As a result, any redistribution or derivative work must comply with the **GPL-3.0 license**.
-Your use of this repository implies agreement to both license terms.
+---
 
-
-
+### References
+- YOLOv5: https://github.com/ultralytics/yolov5
+- 식품의약품안전처: https://www.foodsafetykorea.go.kr
+- 질병관리청: https://www.kdca.go.kr/
