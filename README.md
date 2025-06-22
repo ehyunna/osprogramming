@@ -198,5 +198,13 @@ streamlit run app.py
 
 ---
 
+####  License
+
+- All original code in this repository is licensed under the MIT License.
+- This project also includes code from [YOLOv5](https://github.com/ultralytics/yolov5), which is licensed under the GNU General Public License v3.0 (GPL-3.0).
+
+As a result, any redistribution or derivative work must comply with the **GPL-3.0 license**.
+Your use of this repository implies agreement to both license terms.
+
 
 
