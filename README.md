@@ -63,7 +63,7 @@ Pandas 라이브러리를 활용하여 사전에 구축된 엑셀 파일을 불�
 └── runs/                          
 </pre>
 #### 필수 패키지 설치
-## YOLOv5 설치
+#### YOLOv5 및 필수 환경 설치
 
 ```bash
 git clone https://github.com/ultralytics/yolov5.git
