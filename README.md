@@ -98,3 +98,102 @@ streamlit run app.py
 
 
  
+### 사용 예시
+
+사용자가 음식 사진을 업로드하면, 아래와 같은 결과가 출력됩니다.  
+이미지는 YOLOv5 탐지 결과와 Streamlit 분석 결과로 구성되어 있습니다.
+
+---
+
+#### 예시 1: 콩자반
+
+<p align="center">
+  <img width="500" alt="콩자반 탐지 결과" src="https://github.com/user-attachments/assets/03f2c743-9c37-488f-b654-6754ba21fc73" />
+  <br/>
+  <em>그림 4-1. '콩자반' YOLOv5 탐지 결과</em>
+</p>
+
+<p align="center">
+  <img width="500" alt="콩자반 영양 정보" src="https://github.com/user-attachments/assets/9973098e-76f1-4ac7-a509-1b7b18cb6966" />
+  <br/>
+  <em>그림 4-2. '콩자반' 영양 정보 분석 결과</em>
+</p>
+
+- 인식된 클래스명: 콩자반  
+- 신뢰도: 92.1%  
+- 영양 성분 정보:  
+  - 탄수화물: 35g  
+  - 당류: 12g  
+  - 나트륨: 520mg  
+- 경고 메시지 출력: 기준 초과 항목(탄수화물, 당류, 나트륨)이 있습니다.
+
+---
+
+#### 예시 2: 감자채볶음
+
+<p align="center">
+  <img width="500" alt="감자채볶음 탐지 결과" src="https://github.com/user-attachments/assets/f4ccac81-728c-4487-a5fd-78cecc53cae4" />
+  <br/>
+  <em>그림 5-1. '감자채볶음' YOLOv5 탐지 결과</em>
+</p>
+
+<p align="center">
+  <img width="500" alt="감자채볶음 영양 정보" src="https://github.com/user-attachments/assets/782630fb-f65d-4f2b-b9a9-de13008b651e" />
+  <br/>
+  <em>그림 5-2. '감자채볶음' 영양 정보 분석 결과</em>
+</p>
+
+- 인식된 클래스명: 감자채볶음  
+- 신뢰도: 88.3%  
+- 영양 성분 정보:  
+  - 탄수화물: 22g  
+  - 당류: 4g  
+  - 나트륨: 360mg  
+- 모든 항목이 기준 이하로 안전합니다.
+
+---
+
+#### 예시 3: 식혜 (오탐지 사례)
+
+<p align="center">
+  <img width="500" alt="식혜 탐지 결과" src="https://github.com/user-attachments/assets/0a2e5b67-c2ed-430b-9762-417a56b0d7cb" />
+  <br/>
+  <em>그림 6-1. '식혜' YOLOv5 탐지 결과</em>
+</p>
+
+<p align="center">
+  <img width="500" alt="식혜 영양 정보" src="https://github.com/user-attachments/assets/5a1cc0af-e505-481d-9c2d-798a432e8267" />
+  <br/>
+  <em>그림 6-2. '식혜' 영양 정보 분석 결과</em>
+</p>
+
+- 인식된 클래스명: 김밥 (오탐지)  
+- 신뢰도: 68.7%  
+- 실제 음식과 다른 영양 정보가 연결됨  
+- 유사 외형 클래스 혼동으로 인한 오류 발생
+
+---
+
+#### 예시 4: 어묵볶음 (오탐지 사례)
+
+<p align="center">
+  <img width="500" alt="어묵볶음 탐지 결과" src="https://github.com/user-attachments/assets/3c902e67-0aaf-43a1-9fa8-8200cf0b7f62" />
+  <br/>
+  <em>그림 7-1. '어묵볶음' YOLOv5 탐지 결과</em>
+</p>
+
+<p align="center">
+  <img width="500" alt="어묵볶음 영양 정보" src="https://github.com/user-attachments/assets/39e23183-84ca-4a3c-92e5-e95555851885" />
+  <br/>
+  <em>그림 7-2. '어묵볶음' 영양 정보 분석 결과</em>
+</p>
+
+- 인식된 클래스명: 감자채볶음 (오탐지)  
+- 신뢰도: 67.4%  
+- 실제 음식과 무관한 정보가 표시됨  
+- 잘못된 분석 결과로 인해 주의가 필요함
+
+---
+
+
+
