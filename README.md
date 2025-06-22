@@ -1,8 +1,8 @@
 
-# 🍽️ Food-Image-Recognition
+# Food-Image-Recognition
 
 ## Table of Contents
-- [Food-Image-Recognition](#food-image-recognition)
+- [Food-Image-Recognition](#Food-Image-Recognition)
   - [Table of Contents](#Table-of-Contents)
   - [About the Project](#about-the-project)
     - [Overview](#overview)
