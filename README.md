@@ -110,6 +110,7 @@ pip install streamlit Pillow pandas torch>=1.7 opencv-python matplotlib pyyaml
 ### Dataset
 - 한식 이미지 데이터셋 ([AI Hub 제공](https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=79))을 기반으로 구성됨
 - 총 150종의 한식 음식 클래스가 포함되어 있으며, 각 클래스당 1000장의 이미지 제공
+- 학습 성능 개선을 위해 총 40종의 클래스, 각 클래스 당 30장의 이미지를 학습에 선정하여 사용
 - Roboflow를 통해 학습에 적합하도록 라벨링 및 증강 처리 후 YOLOv5 학습용 데이터셋으로 변환됨
 
 
@@ -131,6 +132,7 @@ pip install streamlit Pillow pandas torch>=1.7 opencv-python matplotlib pyyaml
   <br/>
   <em>그림 4-3. 'food_3' 학습 정확도 시각화</em>
 </p>
+
 ---
 
 
