@@ -76,7 +76,7 @@ pip install streamlit Pillow pandas torch>=1.7 opencv-python matplotlib pyyaml
 
 
 #### 사용 방법 
-app.py 실행 이후 terminal에서  
+app.py 실행 이후 visual studio code terminal에서  
 ```bash 
 cd "프로젝트_디렉토리"
 streamlit run app.py
