@@ -21,7 +21,7 @@
 ##### https://drive.google.com/drive/folders/1yfcrwoKhkjcEOZf3BrRMjT95fE4ASslZ?hl=ko
 ##### best.pt 파일의 용량이 커서 업로드되지 않아 드라이브 링크를 첨부합니다. - 나이현
 
-#### CV 기반 음식 영양 정보 분석 서비스
+## CV 기반 음식 영양 정보 분석 서비스
 ###### Streamlit과 YOLOv5를 기반으로 사용자가 업로드한 음식 이미지를 자동 인식하고, 탐지된 음식에 대해 사전 구축된 데이터셋을 활용해 영양 성분 및 당뇨 위험도를 분석하는 웹 서비스
 
 #### 기술 개발 배경
