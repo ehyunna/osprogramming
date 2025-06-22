@@ -1,4 +1,3 @@
-
 # Food-Image-Recognition
 
 ## Table of Contents
@@ -23,7 +22,6 @@
 ##### best.pt 파일의 용량이 커서 업로드되지 않아 드라이브 링크를 첨부합니다. - 나이현
 
 ### CV 기반 음식 영양 정보 분석 서비스
-
 ###### Streamlit과 YOLOv5를 기반으로 사용자가 업로드한 음식 이미지를 자동 인식하고, 탐지된 음식에 대해 사전 구축된 데이터셋을 활용해 영양 성분 및 당뇨 위험도를 분석하는 웹 서비스
 
 ### 기술 개발 배경
@@ -43,6 +41,7 @@
 - 업로드한 음식 이미지에 대해 바운딩 박스 표시
 - 탐지된 음식의 영양 성분 조회
 - 탄수화물, 당류, 지방, 콜레스테롤, 나트륨 기준 초과 여부 판단 및 경고 표시
+
 
 ### 프로젝트 개발 내용
 - 연구 개발 내용
@@ -70,6 +69,7 @@
 Pandas 라이브러리를 활용하여 사전에 구축된 엑셀 파일을 불러와 표 형식의 데이터를 로딩
  · 엑셀 내부에는 항목 이름(예: 김밥, 비빔밥 등)과 관련 수치 정보가 테이블 형태로 저장되어있으며, 이를 자동 인식 및 매핑할 수 있도록 설계
  
+
 #### 프로젝트 구조
 <pre> project-root/
 ├── app.py
@@ -96,6 +96,7 @@ pip install -r requirements.txt
 pip install streamlit Pillow pandas torch>=1.7 opencv-python matplotlib pyyaml
 ```
 
+
 ### Built-with
 ```
 - Python 3.8+
@@ -105,10 +106,33 @@ pip install streamlit Pillow pandas torch>=1.7 opencv-python matplotlib pyyaml
 - OpenCV, Pillow
 ```
 
+
 ### Dataset
 - 한식 이미지 데이터셋 ([AI Hub 제공](https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=79))을 기반으로 구성됨
 - 총 150종의 한식 음식 클래스가 포함되어 있으며, 각 클래스당 1000장의 이미지 제공
 - Roboflow를 통해 학습에 적합하도록 라벨링 및 증강 처리 후 YOLOv5 학습용 데이터셋으로 변환됨
+
+
+## Accuracy
+<p align="center">
+  <img width="500" alt="food_1 result 그래프" src="https://github.com/user-attachments/assets/b712a61b-d631-44ff-b2fc-05ca5abd1657" />
+  <br/>
+  <em>그림 4-1. 'food_1' 학습 정확도 시각화</em>
+</p>
+
+<p align="center">
+  <img width="500" alt="food_2 result 그래프" src="https://github.com/user-attachments/assets/45abf119-c155-41eb-8121-2e237f50d6b0" />
+  <br/>
+  <em>그림 4-2. 'food_2' 학습 정확도 시각화</em>
+</p>
+
+<p align="center">
+  <img width="500" alt="food_3 result 그래프" src="https://github.com/user-attachments/assets/bab1dd9b-962f-49f6-a3fe-0ab6c4d24d43" />
+  <br/>
+  <em>그림 4-3. 'food_3' 학습 정확도 시각화</em>
+</p>
+---
+
 
 ### 사용 방법
 ```bash
@@ -131,13 +155,13 @@ streamlit run app.py
 <p align="center">
   <img width="500" alt="콩자반 탐지 결과" src="https://github.com/user-attachments/assets/03f2c743-9c37-488f-b654-6754ba21fc73" />
   <br/>
-  <em>그림 4-1. '콩자반' YOLOv5 탐지 결과</em>
+  <em>그림 5-1. '콩자반' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
   <img width="500" alt="콩자반 영양 정보" src="https://github.com/user-attachments/assets/9973098e-76f1-4ac7-a509-1b7b18cb6966" />
   <br/>
-  <em>그림 4-2. '콩자반' 영양 정보 분석 결과</em>
+  <em>그림 5-2. '콩자반' 영양 정보 분석 결과</em>
 </p>
 
 - 인식된 클래스명: 콩자반  
@@ -156,13 +180,13 @@ streamlit run app.py
 <p align="center">
   <img width="500" alt="감자채볶음 탐지 결과" src="https://github.com/user-attachments/assets/f4ccac81-728c-4487-a5fd-78cecc53cae4" />
   <br/>
-  <em>그림 5-1. '감자채볶음' YOLOv5 탐지 결과</em>
+  <em>그림 6-1. '감자채볶음' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
   <img width="500" alt="감자채볶음 영양 정보" src="https://github.com/user-attachments/assets/782630fb-f65d-4f2b-b9a9-de13008b651e" />
   <br/>
-  <em>그림 5-2. '감자채볶음' 영양 정보 분석 결과</em>
+  <em>그림 6-2. '감자채볶음' 영양 정보 분석 결과</em>
 </p>
 
 - 인식된 클래스명: 감자채볶음  
@@ -181,13 +205,13 @@ streamlit run app.py
 <p align="center">
   <img width="500" alt="식혜 탐지 결과" src="https://github.com/user-attachments/assets/0a2e5b67-c2ed-430b-9762-417a56b0d7cb" />
   <br/>
-  <em>그림 6-1. '식혜' YOLOv5 탐지 결과</em>
+  <em>그림 7-1. '식혜' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
   <img width="500" alt="식혜 영양 정보" src="https://github.com/user-attachments/assets/5a1cc0af-e505-481d-9c2d-798a432e8267" />
   <br/>
-  <em>그림 6-2. '식혜' 영양 정보 분석 결과</em>
+  <em>그림 7-2. '식혜' 영양 정보 분석 결과</em>
 </p>
 
 - 인식된 클래스명: 식혜
@@ -202,13 +226,13 @@ streamlit run app.py
 <p align="center">
   <img width="500" alt="어묵볶음 탐지 결과" src="https://github.com/user-attachments/assets/3c902e67-0aaf-43a1-9fa8-8200cf0b7f62" />
   <br/>
-  <em>그림 7-1. '어묵볶음' YOLOv5 탐지 결과</em>
+  <em>그림 8-1. '어묵볶음' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
   <img width="500" alt="어묵볶음 영양 정보" src="https://github.com/user-attachments/assets/39e23183-84ca-4a3c-92e5-e95555851885" />
   <br/>
-  <em>그림 7-2. '어묵볶음' 영양 정보 분석 결과</em>
+  <em>그림 8-2. '어묵볶음' 영양 정보 분석 결과</em>
 </p>
 
 - 인식된 클래스명: 감자채볶음 (오탐지)  
@@ -218,34 +242,15 @@ streamlit run app.py
 
 ---
 
-### Accuracy
-<p align="center">
-  <img width="500" alt="food_1 result 그래프" src="https://github.com/user-attachments/assets/b712a61b-d631-44ff-b2fc-05ca5abd1657" />
-  <br/>
-  <em>그림 8-1. 'food_1' 학습 정확도 시각화</em>
-</p>
 
-<p align="center">
-  <img width="500" alt="food_2 result 그래프" src="https://github.com/user-attachments/assets/45abf119-c155-41eb-8121-2e237f50d6b0" />
-  <br/>
-  <em>그림 8-2. 'food_2' 학습 정확도 시각화</em>
-</p>
-
-<p align="center">
-  <img width="500" alt="food_3 result 그래프" src="https://github.com/user-attachments/assets/bab1dd9b-962f-49f6-a3fe-0ab6c4d24d43" />
-  <br/>
-  <em>그림 8-3. 'food_3' 학습 정확도 시각화</em>
-</p>
----
-
-###  License
+##  License
 
 - All original code in this repository is licensed under the MIT License.
 - This project also includes code from [YOLOv5](https://github.com/ultralytics/yolov5), which is licensed under the GNU General Public License v3.0 (GPL-3.0).
 
 ---
 
-### References
+## References
 - YOLOv5: https://github.com/ultralytics/yolov5
 - 식품의약품안전처: https://www.foodsafetykorea.go.kr
 - 질병관리청: https://www.kdca.go.kr/
