@@ -35,7 +35,7 @@
 
 <p align="center"> <img width="500" alt="사용자 입력 패널" src="https://github.com/user-attachments/assets/7703fe18-6f8c-478f-a4d1-524840857094" /> <br/> <em>그림 2. 객체 탐지 모델의 구조</em> </p>
 
-- 현재 음식 인식 분야에서는 그림 2와 같이 객체 탐지 구조를 사용하고 있다. 본 프로젝트에서도 객체 탐지 모델인 YOLOv5를 사용하여 이를 통해 음식을 인식하고자 한다.
+- 현재 음식 인식 분야에서는 그림 2와 같이 객체 탐지 구조를 사용하고 있음. 본 프로젝트에서도 객체 탐지 모델인 YOLOv5를 사용하여 이를 통해 음식을 인식하고자 함.
 -총 3개의 음식 분류 모델 ('food_1_best.pt', 'food_2_best.pt', 'food_3_best.pt')을 구성
 -각각 약 13~14개의 음식 클래스를 Roboflow 기반 dataset에서 labelling 및 agumentation진행
 -클래스 목록은 각각 'classes_food1.txt', 'classes_food2.txt', 'classes_food3.txt'에 저장됨
@@ -100,8 +100,8 @@ streamlit run app.py
  
 ### 사용 예시
 
-사용자가 음식 사진을 업로드하면, 아래와 같은 결과가 출력됩니다.  
-이미지는 YOLOv5 탐지 결과와 Streamlit 분석 결과로 구성되어 있습니다.
+사용자가 음식 사진을 업로드하면, 아래와 같은 결과가 출력됨.
+이미지는 YOLOv5 탐지 결과와 Streamlit 분석 결과로 구성됨.
 
 ---
 
