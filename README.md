@@ -140,19 +140,19 @@ pip install streamlit Pillow pandas torch>=1.7 opencv-python matplotlib pyyaml
 <p align="center">
   <img alt="food_1_best.pt 탐지 결과" src="https://github.com/user-attachments/assets/91c1ebe4-fdf4-4971-9837-ab8b00314298" />
   <br/>
-  <em>그림 9-1. 'food_1_best.pt' YOLOv5 탐지 결과</em>
+  <em>그림 5-1. 'food_1_best.pt' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
   <img alt="food_2_best.pt 탐지 결과" src="https://github.com/user-attachments/assets/2e9ba371-a847-4fe3-843e-c7c1ec67c1c1" />
   <br/>
-  <em>그림 9-2. 'food_2_best.pt' YOLOv5 탐지 결과</em>
+  <em>그림 5-2. 'food_2_best.pt' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
   <img alt="food_3_best.pt 탐지 결과" src="https://github.com/user-attachments/assets/4702137b-4e16-4384-9c98-fb95988e176b" />
   <br/>
-  <em>그림 9-3. 'food_3_best.pt' YOLOv5 탐지 결과</em>
+  <em>그림 5-3. 'food_3_best.pt' YOLOv5 탐지 결과</em>
 </p>
 
 ---
@@ -179,13 +179,13 @@ streamlit run app.py
 <p align="center">
   <img width="500" alt="콩자반 탐지 결과" src="https://github.com/user-attachments/assets/03f2c743-9c37-488f-b654-6754ba21fc73" />
   <br/>
-  <em>그림 5-1. '콩자반' YOLOv5 탐지 결과</em>
+  <em>그림 6-1. '콩자반' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
   <img width="500" alt="콩자반 영양 정보" src="https://github.com/user-attachments/assets/9973098e-76f1-4ac7-a509-1b7b18cb6966" />
   <br/>
-  <em>그림 5-2. '콩자반' 영양 정보 분석 결과</em>
+  <em>그림 6-2. '콩자반' 영양 정보 분석 결과</em>
 </p>
 
 - 인식된 클래스명: 콩자반  
@@ -204,13 +204,13 @@ streamlit run app.py
 <p align="center">
   <img width="500" alt="감자채볶음 탐지 결과" src="https://github.com/user-attachments/assets/f4ccac81-728c-4487-a5fd-78cecc53cae4" />
   <br/>
-  <em>그림 6-1. '감자채볶음' YOLOv5 탐지 결과</em>
+  <em>그림 7-1. '감자채볶음' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
   <img width="500" alt="감자채볶음 영양 정보" src="https://github.com/user-attachments/assets/782630fb-f65d-4f2b-b9a9-de13008b651e" />
   <br/>
-  <em>그림 6-2. '감자채볶음' 영양 정보 분석 결과</em>
+  <em>그림 7-2. '감자채볶음' 영양 정보 분석 결과</em>
 </p>
 
 - 인식된 클래스명: 감자채볶음  
@@ -229,13 +229,13 @@ streamlit run app.py
 <p align="center">
   <img width="500" alt="식혜 탐지 결과" src="https://github.com/user-attachments/assets/0a2e5b67-c2ed-430b-9762-417a56b0d7cb" />
   <br/>
-  <em>그림 7-1. '식혜' YOLOv5 탐지 결과</em>
+  <em>그림 8-1. '식혜' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
   <img width="500" alt="식혜 영양 정보" src="https://github.com/user-attachments/assets/5a1cc0af-e505-481d-9c2d-798a432e8267" />
   <br/>
-  <em>그림 7-2. '식혜' 영양 정보 분석 결과</em>
+  <em>그림 8-2. '식혜' 영양 정보 분석 결과</em>
 </p>
 
 - 인식된 클래스명: 식혜
@@ -250,13 +250,13 @@ streamlit run app.py
 <p align="center">
   <img width="500" alt="어묵볶음 탐지 결과" src="https://github.com/user-attachments/assets/3c902e67-0aaf-43a1-9fa8-8200cf0b7f62" />
   <br/>
-  <em>그림 8-1. '어묵볶음' YOLOv5 탐지 결과</em>
+  <em>그림 9-1. '어묵볶음' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
   <img width="500" alt="어묵볶음 영양 정보" src="https://github.com/user-attachments/assets/39e23183-84ca-4a3c-92e5-e95555851885" />
   <br/>
-  <em>그림 8-2. '어묵볶음' 영양 정보 분석 결과</em>
+  <em>그림 9-2. '어묵볶음' 영양 정보 분석 결과</em>
 </p>
 
 - 인식된 클래스명: 감자채볶음 (오탐지)  
