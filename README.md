@@ -10,7 +10,7 @@
   - [Results](#results)
     - [Demo](#Demo)
     - [Accuracy](#accuracy)
-  - [Contributing](#contributing)
+  - [Contributors](#contributors)
   - [License](#license)
   - [References](#references)
 
@@ -266,6 +266,12 @@ streamlit run app.py
 
 ---
 
+## Contributors
+- 2412496 나이현 : ehyunna
+- 2414801 김하영 : rlagk0
+- 2416987 장은주 : ej3131
+
+---
 
 ##  License
 
