@@ -243,21 +243,21 @@ streamlit run app.py
 - 실제 음식과 다른 영양 정보가 연결됨 (두부김치)
 
 #### Layers
-![food_1_bestpt_Convpng](https://github.com/user-attachments/assets/91c1ebe4-fdf4-4971-9837-ab8b00314298)
+
 <p align="center">
-  <img width="500" alt="food_1_best.pt 탐지 결과" src="https://github.com/user-attachments/assets/91c1ebe4-fdf4-4971-9837-ab8b00314298" />
+  <img alt="food_1_best.pt 탐지 결과" src="https://github.com/user-attachments/assets/91c1ebe4-fdf4-4971-9837-ab8b00314298" />
   <br/>
   <em>그림 9-1. 'food_1_best.pt' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
-  <img width="500" alt="food_2_best.pt 탐지 결과" src="https://github.com/user-attachments/assets/2e9ba371-a847-4fe3-843e-c7c1ec67c1c1" />
+  <img alt="food_2_best.pt 탐지 결과" src="https://github.com/user-attachments/assets/2e9ba371-a847-4fe3-843e-c7c1ec67c1c1" />
   <br/>
   <em>그림 9-2. 'food_2_best.pt' YOLOv5 탐지 결과</em>
 </p>
 
 <p align="center">
-  <img width="500" alt="food_3_best.pt 탐지 결과" src="https://github.com/user-attachments/assets/4702137b-4e16-4384-9c98-fb95988e176b" />
+  <img alt="food_3_best.pt 탐지 결과" src="https://github.com/user-attachments/assets/4702137b-4e16-4384-9c98-fb95988e176b" />
   <br/>
   <em>그림 9-3. 'food_3_best.pt' YOLOv5 탐지 결과</em>
 </p>
