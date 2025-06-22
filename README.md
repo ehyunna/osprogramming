@@ -58,11 +58,12 @@ Pandas 라이브러리를 활용하여 사전에 구축된 엑셀 파일을 불�
 ├── classes_food1.txt              
 ├── classes_food2.txt  
 ├── classes_food3.txt  
+├── input.jpg
 ├── 음식별 영양 성분 정보.csv      
 └── runs/                          
 </pre>
 #### 필수 패키지 설치
-## 🛠 YOLOv5 설치
+## YOLOv5 설치
 
 ```bash
 git clone https://github.com/ultralytics/yolov5.git
