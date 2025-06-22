@@ -1,0 +1,11 @@
+yaml_content = """
+train: ./images/train
+val: ./images/val
+test: ./images/test
+
+nc: 13
+names: [albap, bossam, gyeongdan, jajangmyeon, jjamppong, kalguksu, kimbab, kimchifr, mandu, mulnaengmyeon, pizza, sikhye, yubuchobap]
+"""
+
+with open("/content/yolov5/data.yaml", "w", encoding="utf-8") as f:
+    f.write(yaml_content.strip())
